@@ -35,6 +35,9 @@ target_link_libraries(Sudoku PRIVATE ${wxWidgets_LIBRARIES})
 target_include_directories(Sudoku PRIVATE ${wxWidgets_INCLUDE_DIRS})
 target_compile_definitions(Sudoku PRIVATE ${wxWidgets_DEFINITIONS})
 
+######################################################################
+#                             TESTS                                  #
+######################################################################
 add_executable(SudokuTests src/algos.hpp
                            src/algos.cpp
                            tests/algorithmTests.cpp)
@@ -42,6 +45,3 @@ add_executable(SudokuTests src/algos.hpp
 target_link_libraries(SudokuTests PRIVATE ${wxWidgets_LIBRARIES})
 target_include_directories(SudokuTests PRIVATE src ${wxWidgets_INCLUDE_DIRS})
 target_compile_definitions(SudokuTests PRIVATE ${wxWidgets_DEFINITIONS})
-######################################################################
-#                             TESTS                                  #
-######################################################################
